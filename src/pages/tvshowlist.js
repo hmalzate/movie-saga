@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-function MovieList() {
+function TVShowList() {
   const [items, setItems] = useState([]);
   const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://digital-backend-h5j1.onrender.com';
 
   useEffect(() => {
-    fetch(`${backendUrl}/movies?type=movie`)
+    fetch(`${backendUrl}/movies?type=tvshow`)
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data.data)) {
@@ -17,15 +17,15 @@ function MovieList() {
           console.error('Unexpected response format:', data);
         }
       })
-      .catch(error => console.error('Error fetching the movie data:', error));
+      .catch(error => console.error('Error fetching the TV show data:', error));
   }, [backendUrl]);
 
   return (
-    <div className="movie-list">
-      <h2>Movies</h2>
+    <div className="tvshow-list">
+      <h2>TV Shows</h2>
       <div className="grid">
         {items.map(item => (
-          <div key={item.id} className="movie-item">
+          <div key={item.id} className="tvshow-item">
             <Link to={`/movie/${item.id}`}>
               <img src={item.poster} alt={item.title} />
               <h3>{item.title}</h3>
@@ -37,4 +37,4 @@ function MovieList() {
   );
 }
 
-export default MovieList;
+export default TVShowList;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 
 function Login() {
@@ -7,16 +7,31 @@ function Login() {
     email: '',
     password: ''
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Login data:', formData);
-    // Handle form submission
+    const response = await fetch('https://digital-backend-h5j1.onrender.com/auth/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    if (response.ok) {
+      const data = await response.json();
+      localStorage.setItem('user', JSON.stringify(data)); // Store user info in localStorage
+      alert('Login successful');
+      navigate('/'); // Redirect to home page
+      window.location.reload(); // Reload the page to ensure the header updates
+    } else {
+      alert('Login failed');
+    }
   };
 
   return (

@@ -4,13 +4,14 @@ import '../App.css';
 
 function FeaturedMovies() {
   const [movies, setMovies] = useState([]);
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://digital-backend-h5j1.onrender.com';
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch(`${backendUrl}/movies?type=movie`)
       .then(response => response.json())
-      .then(data => setMovies(data.movies))
-      .catch(error => console.error('Error fetching the JSON data:', error));
-  }, []);
+      .then(data => setMovies(data.data))
+      .catch(error => console.error('Error fetching the movie data:', error));
+  }, [backendUrl]);
 
   return (
     <div className="featured-section">

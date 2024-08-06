@@ -4,13 +4,14 @@ import '../App.css';
 
 function FeaturedTVShows() {
   const [shows, setShows] = useState([]);
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://digital-backend-h5j1.onrender.com';
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch(`${backendUrl}/movies?type=tvshow`)
       .then(response => response.json())
-      .then(data => setShows(data.tvshows))
-      .catch(error => console.error('Error fetching the JSON data:', error));
-  }, []);
+      .then(data => setShows(data.data))
+      .catch(error => console.error('Error fetching the TV show data:', error));
+  }, [backendUrl]);
 
   return (
     <div className="featured-section">
