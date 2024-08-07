@@ -39,12 +39,12 @@ body {
 }
 
 .logo-img {
-  height: 5vh; /* Slightly larger */
+  height: 5vh;
   margin-right: 10px;
 }
 
 .logo-text {
-  font-size: 3vh; /* Slightly larger */
+  font-size: 3vh;
   font-family: "URW Chancery L", cursive;
   font-weight: bold;
   color: rgb(242, 0, 125);
@@ -66,7 +66,7 @@ body {
 .nav-links a {
   color: silver;
   text-decoration: none;
-  font-size: 2vh; /* Slightly larger */
+  font-size: 2vh;
   font-family: "Chalkduster", fantasy;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -90,11 +90,11 @@ body {
 
 .search-input {
   padding: 0.5rem;
-  font-size: 1.5vh; /* Slightly larger */
+  font-size: 1.5vh;
   border: none;
   border-radius: 4px 0 0 4px;
   outline: none;
-  flex-grow: 1; /* Make the input grow */
+  flex-grow: 1;
   background-color: transparent;
   color: white;
   border-right: none;
@@ -102,7 +102,7 @@ body {
 
 .search-button {
   padding: 0.5rem;
-  font-size: 1.5vh; /* Slightly larger */
+  font-size: 1.5vh;
   background-color: transparent;
   border: none;
   color: white;
@@ -110,7 +110,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 1in; /* 1 inch margin from right side */
+  padding-right: 1in;
 }
 
 .search-button:hover {
@@ -124,7 +124,7 @@ body {
 
 .user-name {
   color: silver;
-  font-size: 2vh; /* Slightly larger */
+  font-size: 2vh;
   margin-left: 1rem;
   white-space: nowrap;
 }
@@ -133,7 +133,7 @@ body {
   background: none;
   border: none;
   color: silver;
-  font-size: 2vh; /* Slightly larger */
+  font-size: 2vh;
   font-family: "Chalkduster", fantasy;
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -170,7 +170,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3vh; /* Slightly larger */
+  font-size: 3vh;
   margin: 0;
   padding: 0;
   color: rgb(242, 241, 247);
@@ -178,7 +178,7 @@ body {
 }
 
 .hero-text p {
-  font-size: 2vh; /* Slightly larger */
+  font-size: 2vh;
   margin: 0;
   color: rgb(234, 246, 6);
   -webkit-text-stroke: 0.1vh rgb(14, 13, 13);
@@ -218,14 +218,14 @@ body {
 }
 
 .featured-header h2 {
-  font-size: 2vh; /* Slightly larger */
+  font-size: 2vh;
   color: white;
 }
 
 .view-all a {
   color: gold;
   text-decoration: none;
-  font-size: 1.5vh; /* Slightly larger */
+  font-size: 1.5vh;
   transition: color 0.3s;
 }
 
