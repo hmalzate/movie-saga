@@ -29,6 +29,7 @@ body {
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .logo-container {
@@ -53,7 +54,8 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .nav-links li {
@@ -68,6 +70,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -79,6 +82,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  white-space: nowrap;
 }
 
 .search-input {
@@ -107,6 +111,7 @@ body {
   color: silver;
   font-size: 1.5rem;
   margin-left: 1rem;
+  white-space: nowrap;
 }
 
 .logout-button {
@@ -120,6 +125,7 @@ body {
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
   margin-left: 1rem;
+  white-space: nowrap;
 }
 
 .logout-button:hover {
