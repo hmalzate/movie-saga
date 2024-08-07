@@ -10,11 +10,12 @@ const SearchResults = () => {
   const query = useQuery();
   const searchQuery = query.get('query');
   const [results, setResults] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (searchQuery) {
-      fetch(`https://digital-backend-h5j1.onrender.com/movies/search?title=${encodeURIComponent(searchQuery.toLowerCase())}`)
+      fetch(`https://digital-backend-h5j1.onrender.com/movies`)
         .then(response => response.json())
         .then(data => {
           setResults(data.data); // Ensure this matches the structure of your response
@@ -26,6 +27,15 @@ const SearchResults = () => {
     }
   }, [searchQuery]);
 
+  useEffect(() => {
+    if (searchQuery && results.length > 0) {
+      const filtered = results.filter(item => 
+        item.title.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setFilteredResults(filtered);
+    }
+  }, [searchQuery, results]);
+
   if (error) {
     return <div>{error}</div>;
   }
@@ -34,7 +44,7 @@ const SearchResults = () => {
     <div className="search-results">
       <h2>Search Results for "{searchQuery}"</h2>
       <div className="grid">
-        {results.map(item => (
+        {filteredResults.map(item => (
           <div key={item.id} className="movie-item">
             <Link to={`/movie/${item.id}`}>
               <img src={item.poster} alt={item.title} />
