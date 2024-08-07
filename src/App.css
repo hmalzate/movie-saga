@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 /* App Layout */
@@ -13,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Header Styles */
@@ -35,12 +39,12 @@ body {
 }
 
 .logo-img {
-  height: 4vh; /* Use viewport height for responsive sizing */
+  height: 4vh;
   margin-right: 10px;
 }
 
 .logo-text {
-  font-size: 2vh; /* Use viewport height for responsive sizing */
+  font-size: 2vh;
   font-family: "URW Chancery L", cursive;
   font-weight: bold;
   color: rgb(242, 0, 125);
@@ -62,7 +66,7 @@ body {
 .nav-links a {
   color: silver;
   text-decoration: none;
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   font-family: "Chalkduster", fantasy;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -84,7 +88,7 @@ body {
 
 .search-input {
   padding: 0.5rem;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
   outline: none;
@@ -92,10 +96,11 @@ body {
 
 .search-button {
   padding: 0.5rem;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
   background-color: #ccc;
   border: none;
-  border-left: 1px solid #ccc;
+  border-left: 
+  1px solid #ccc;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
@@ -106,7 +111,7 @@ body {
 
 .user-name {
   color: silver;
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   margin-left: 1rem;
   white-space: nowrap;
 }
@@ -115,7 +120,7 @@ body {
   background: none;
   border: none;
   color: silver;
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   font-family: "Chalkduster", fantasy;
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -151,18 +156,18 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 2.5vh; /* Use viewport height for responsive sizing */
+  font-size: 2.5vh;
   margin: 0;
   padding: 0;
   color: rgb(242, 241, 247);
-  -webkit-text-stroke: 0.2vh rgb(4, 5, 4); /* Use viewport height for responsive sizing */
+  -webkit-text-stroke: 0.2vh rgb(4, 5, 4);
 }
 
 .hero-text p {
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   margin: 0;
   color: rgb(234, 246, 6);
-  -webkit-text-stroke: 0.1vh rgb(14, 13, 13); /* Use viewport height for responsive sizing */
+  -webkit-text-stroke: 0.1vh rgb(14, 13, 13);
   font-style: bold;
 }
 
@@ -176,13 +181,13 @@ body {
 
 .hero-banner-bottom h1 {
   color: gold;
-  font-size: 2vh; /* Use viewport height for responsive sizing */
+  font-size: 2vh;
   margin-bottom: 1rem;
 }
 
 .hero-banner-bottom p {
   color: silver;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
 }
 
 /* Featured Section Styles */
@@ -199,14 +204,14 @@ body {
 }
 
 .featured-header h2 {
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   color: white;
 }
 
 .view-all a {
   color: gold;
   text-decoration: none;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
   transition: color 0.3s;
 }
 
@@ -244,7 +249,7 @@ body {
 .featured-item h3 {
   margin-top: 0.5rem;
   color: white;
-  font-size: 1.2vh; /* Use viewport height for responsive sizing */
+  font-size: 1.2vh;
   text-align: center;
 }
 
@@ -257,7 +262,7 @@ body {
   color: black;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  font-size: 0.8vh; /* Use viewport height for responsive sizing */
+  font-size: 0.8vh;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -379,13 +384,13 @@ body {
 }
 
 .movie-detail-info h2 {
-  font-size: 2vh; /* Use viewport height for responsive sizing */
+  font-size: 2vh;
   color: magenta;
   margin-bottom: 1rem;
 }
 
 .movie-detail-info p {
-  font-size: 1.2vh; /* Use viewport height for responsive sizing */
+  font-size: 1.2vh;
   color: #d3d3d3;
   margin-bottom: 1rem;
 }
@@ -401,7 +406,7 @@ body {
   color: black;
   border: none;
   padding: 0.8rem 1.5rem;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s;
@@ -431,7 +436,7 @@ body {
 }
 
 .content-section h2 {
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   color: magenta;
   margin-bottom: 1rem;
   text-align: left;
@@ -459,13 +464,13 @@ body {
 }
 
 .content-info h3 {
-  font-size: 1.2vh; /* Use viewport height for responsive sizing */
+  font-size: 1.2vh;
   color: magenta;
   margin-bottom: 1rem;
 }
 
 .content-info p {
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
   color: white;
   margin-bottom: 1rem;
 }
@@ -507,7 +512,7 @@ body {
 .form h2 {
   margin-bottom: 1rem;
   color: rgb(255, 0, 234);
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
 }
 
 .form label {
@@ -515,7 +520,7 @@ body {
   margin-bottom: 0.5rem;
   color: black;
   font-weight: bold;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
 }
 
 .form input {
@@ -536,7 +541,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
 }
 
 .form button:hover {
@@ -547,7 +552,7 @@ body {
   margin-top: 1rem;
   text-align: center;
   color: white;
-  font-size: 1vh; /* Use viewport height for responsive sizing */
+  font-size: 1vh;
 }
 
 .signup-link a {
@@ -642,13 +647,13 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 1.8vh; /* Use viewport height for responsive sizing */
-    -webkit-text-stroke: 0.2vh rgb(4, 5, 4); /* Use viewport height for responsive sizing */
+    font-size: 1.8vh;
+    -webkit-text-stroke: 0.2vh rgb(4, 5, 4);
   }
 
   .hero-text p {
-    font-size: 1vh; /* Use viewport height for responsive sizing */
-    -webkit-text-stroke: 0.1vh rgb(14, 13, 13); /* Use viewport height for responsive sizing */
+    font-size: 1vh;
+    -webkit-text-stroke: 0.1vh rgb(14, 13, 13);
   }
 
   .featured-item {
@@ -669,11 +674,11 @@ body {
   }
 
   .form h2 {
-    font-size: 1.5vh; /* Use viewport height for responsive sizing */
+    font-size: 1.5vh;
   }
 
   .form label {
-    font-size: 1vh; /* Use viewport height for responsive sizing */
+    font-size: 1vh;
   }
 
   .form input {
@@ -682,11 +687,11 @@ body {
 
   .form button {
     padding: 0.8rem;
-    font-size: 1vh; /* Use viewport height for responsive sizing */
+    font-size: 1vh;
   }
 
   .signup-link {
-    font-size: 1vh; /* Use viewport height for responsive sizing */
+    font-size: 1vh;
   }
 
   .footer {
@@ -699,7 +704,7 @@ body {
   }
 
   .footer h4 {
-    font-size: 1.5vh; /* Use viewport height for responsive sizing */
+    font-size: 1.5vh;
   }
 }
 
@@ -746,11 +751,11 @@ body {
   }
 
   .movie-detail-info h2 {
-    font-size: 1.5vh; /* Use viewport height for responsive sizing */
+    font-size: 1.5vh;
   }
 
   .movie-detail-info p {
-    font-size: 1vh; /* Use viewport height for responsive sizing */
+    font-size: 1vh;
   }
 
   .movie-detail-actions {
@@ -762,7 +767,7 @@ body {
   .buy-button {
     width: 100%;
     padding: 0.8rem;
-    font-size: 1vh; /* Use viewport height for responsive sizing */
+    font-size: 1vh;
   }
 }
 
@@ -775,11 +780,11 @@ body {
 }
 
 .dashboard h2 {
-  font-size: 2vh; /* Use viewport height for responsive sizing */
+  font-size: 2vh;
   color: magenta;
 }
 
 .dashboard p {
-  font-size: 1.5vh; /* Use viewport height for responsive sizing */
+  font-size: 1.5vh;
   color: silver;
 }
