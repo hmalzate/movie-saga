@@ -10,9 +10,16 @@ const MovieDetail = () => {
 
   useEffect(() => {
     fetchMovieById(id)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
       .then(data => {
-        if (data) {
-          setMovie(data);
+        if (data && data.data) {
+          setMovie(data.data);
         } else {
           setError('Movie not found');
         }
