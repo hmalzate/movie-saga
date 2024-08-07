@@ -342,7 +342,7 @@ body {
 
 .movie-detail-header {
   display: flex;
-  width: 90%;
+  width: 100%;
   background-color: #1c1c1c;
   border-radius: 12px;
   overflow: hidden;
@@ -729,6 +729,41 @@ body {
 
   .tvshow-item {
     width: 100%;
+  }
+
+  .movie-detail-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-detail-poster {
+    border-radius: 12px;
+  }
+
+  .movie-detail-info {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-detail-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .movie-detail-info p {
+    font-size: 1rem;
+  }
+
+  .movie-detail-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .rent-button,
+  .buy-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
   }
 }
 
