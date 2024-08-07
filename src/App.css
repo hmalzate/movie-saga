@@ -90,15 +90,6 @@ body {
   position: relative;
 }
 
-.search-form::before {
-  content: "\f002"; /* FontAwesome search icon unicode */
-  font-family: "FontAwesome";
-  position: absolute;
-  left: 10px;
-  font-size: 1.5vh;
-  color: white;
-}
-
 .search-input {
   padding: 0.5rem 0.5rem 0.5rem 2rem; /* Add padding-left for icon space */
   font-size: 1.5vh;
@@ -124,11 +115,6 @@ body {
 
 .search-button:hover {
   background-color: transparent;
-}
-
-.search-icon {
-  font-size: 2vh;
-  margin-right: 0.5rem;
 }
 
 .user-name {
