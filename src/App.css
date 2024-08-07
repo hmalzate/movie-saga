@@ -30,7 +30,6 @@ body {
   border-bottom: 8px solid rgb(217, 0, 255);
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .logo-container {
