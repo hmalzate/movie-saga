@@ -10,17 +10,11 @@ const MovieDetail = () => {
 
   useEffect(() => {
     fetchMovieById(id)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json(); // Make sure response is parsed as JSON
-      })
       .then(data => {
         if (data) {
-          setMovie(data); // Ensure we access the correct data structure
+          setMovie(data);
         } else {
-          throw new Error('Data format error');
+          setError('Movie not found');
         }
       })
       .catch(error => {
