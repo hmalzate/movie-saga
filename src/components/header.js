@@ -39,7 +39,7 @@ const Header = () => {
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/movies">Movies</Link></li>
-          <li><Link to="/tvshows">TV Shows</Link></li> {/* Added TV Shows Link */}
+          <li><Link to="/tvshows">TV Shows</Link></li>
           {loggedInUser ? (
             <>
               <li><Link to="/dashboard" className="user-name">{loggedInUser.firstName}</Link></li>
@@ -59,7 +59,7 @@ const Header = () => {
           onChange={handleSearchChange} 
         />
         <button type="submit" className="search-button">
-          <img src="/search-icon.png" alt="Search" />
+          Search
         </button>
       </form>
     </header>

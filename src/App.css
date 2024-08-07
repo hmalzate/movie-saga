@@ -30,6 +30,7 @@ body {
   border-bottom: 8px solid rgb(217, 0, 255);
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .logo-container {
@@ -81,26 +82,18 @@ body {
 .search-form {
   display: flex;
   align-items: center;
-  margin-left: auto;
   white-space: nowrap;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  flex-grow: 1;
-  max-width: 50%;
-  position: relative;
-}
-
-.search-form::before {
-  content: "\f002"; /* FontAwesome search icon unicode */
-  font-family: "FontAwesome";
   position: absolute;
-  left: 10px;
-  font-size: 1.5vh;
-  color: white;
+  bottom: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* Adjust as needed */
 }
 
 .search-input {
-  padding: 0.5rem 0.5rem 0.5rem 2rem; /* Add padding-left for icon space */
+  padding: 0.5rem 1rem;
   font-size: 1.5vh;
   border: 1px solid magenta; /* Updated border color */
   border-radius: 4px 0 0 4px;
@@ -111,25 +104,13 @@ body {
 }
 
 .search-button {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5vh;
-  background-color: transparent;
+  background-color: magenta;
   border: none;
   color: white;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 1in;
-}
-
-.search-button:hover {
-  background-color: transparent;
-}
-
-.search-icon {
-  font-size: 2vh;
-  margin-right: 0.5rem;
+  border-radius: 0 4px 4px 0;
 }
 
 .user-name {
