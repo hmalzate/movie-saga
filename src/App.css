@@ -5,7 +5,6 @@ body {
   color: #e705b3;
   margin: 0;
   padding: 0;
-  overflow: auto;
 }
 
 /* App Layout */
@@ -42,7 +41,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8); /* Set background color with opacity */
   color: rgb(242, 0, 125);
   padding: 0.5rem 1rem;
   display: flex;
@@ -50,6 +49,8 @@ body {
   align-items: center;
   border-bottom: 8px solid rgb(217, 0, 255);
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-container {
@@ -152,6 +153,7 @@ body {
   position: relative;
   height: 40vh;
   background: rgba(0, 0, 0, 0.65); /* Set background color with opacity */
+  z-index: 1;
 }
 
 .hero-img {
@@ -186,10 +188,12 @@ body {
 
 /* New Section Below Hero Banner */
 .hero-banner-bottom {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 1rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-banner-bottom h1 {
@@ -208,6 +212,8 @@ body {
   padding: 2rem;
   background-color: black;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .featured-header {
@@ -283,6 +289,8 @@ body {
 /* Movie List Styles */
 .movie-list {
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .movie-list .grid {
@@ -321,6 +329,8 @@ body {
 /* TV Show List Styles */
 .tvshow-list {
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .tvshow-list .grid {
@@ -365,6 +375,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .movie-detail-header {
@@ -443,6 +454,8 @@ body {
   background-color: black;
   color: white;
   margin: 1rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .content-section h2 {
@@ -507,6 +520,8 @@ body {
   height: calc(100vh - 60px);
   background-color: black;
   padding-top: 2rem; /* Adjust to move the form higher */
+  position: relative;
+  z-index: 1;
 }
 
 .form {
@@ -584,6 +599,8 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-section {
@@ -659,7 +676,6 @@ body {
   padding: 2rem;
   text-align: center;
 }
-
 .dashboard h2 {
   font-size: 2rem;
   color: magenta;
