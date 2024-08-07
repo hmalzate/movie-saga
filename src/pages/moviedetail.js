@@ -11,12 +11,17 @@ const MovieDetail = () => {
   useEffect(() => {
     fetchMovieById(id)
       .then(response => {
-        console.log('Response from fetchMovieById:', response);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         return response.json(); // Make sure response is parsed as JSON
       })
       .then(data => {
-        console.log('Parsed data:', data);
-        setMovie(data);
+        if (data) {
+          setMovie(data); // Ensure we access the correct data structure
+        } else {
+          throw new Error('Data format error');
+        }
       })
       .catch(error => {
         console.error('Error fetching movie or TV show:', error);
