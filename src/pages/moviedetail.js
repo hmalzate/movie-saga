@@ -10,7 +10,14 @@ const MovieDetail = () => {
 
   useEffect(() => {
     fetchMovieById(id)
-      .then(data => setMovie(data))
+      .then(response => {
+        console.log('Response from fetchMovieById:', response);
+        return response.json(); // Make sure response is parsed as JSON
+      })
+      .then(data => {
+        console.log('Parsed data:', data);
+        setMovie(data);
+      })
       .catch(error => {
         console.error('Error fetching movie or TV show:', error);
         setError('Error fetching movie or TV show');
