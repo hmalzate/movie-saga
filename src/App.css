@@ -606,27 +606,13 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    padding: 0.5rem;
-    flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .logo-img {
-    height: 60px;
-  }
-
-  .logo-text {
-    font-size: 2rem;
   }
 
   .nav-links {
     flex-wrap: nowrap;
     flex: 1;
     justify-content: center;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 1rem;
   }
 
   .search-form {
