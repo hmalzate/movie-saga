@@ -34,7 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<MovieList />} />
           <Route path="/tvshows" element={<TVShowList />} /> {/* Added route */}
-          <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path="/movie/:{id}" element={<MovieDetail />} />
           <Route path="/signup" element={<Registration />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/search" element={<SearchResults />} />
