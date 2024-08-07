@@ -42,7 +42,7 @@ const Header = () => {
           <li><Link to="/tvshows">TV Shows</Link></li> {/* Added TV Shows Link */}
           {loggedInUser ? (
             <>
-              <li><span className="user-name">{loggedInUser.firstName}</span></li>
+              <li><Link to="/dashboard" className="user-name">{loggedInUser.firstName}</Link></li>
               <li><button onClick={handleLogout} className="logout-button">Logout</button></li>
             </>
           ) : (

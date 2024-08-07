@@ -291,6 +291,44 @@ body {
   transform: scale(1.05);
 }
 
+/* TV Show List Styles */
+.tvshow-list {
+  padding: 2rem;
+}
+
+.tvshow-list .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.tvshow-item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 23%;
+  transition: transform 0.3s;
+}
+
+.tvshow-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.tvshow-item h3 {
+  margin-top: 0.5rem;
+  color: black;
+}
+
+.tvshow-item:hover {
+  transform: scale(1.05);
+}
+
 /* Movie Detail Styles */
 .movie-detail {
   background-color: #0b1a30;
@@ -585,4 +623,22 @@ body {
   .featured-item, .spotlight-item {
     width: 40vw; /* Maintain width for featured items */
   }
+}
+
+/* Dashboard Styles */
+.dashboard {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboard h2 {
+  font-size: 2rem;
+  color: magenta;
+}
+
+.dashboard p {
+  font-size: 1.5rem;
+  color: silver;
 }

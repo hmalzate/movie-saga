@@ -27,8 +27,7 @@ function Login() {
       const data = await response.json();
       localStorage.setItem('user', JSON.stringify(data)); // Store user info in localStorage
       alert('Login successful');
-      navigate('/'); // Redirect to home page
-      window.location.reload(); // Reload the page to ensure the header updates
+      navigate('/dashboard'); // Redirect to dashboard
     } else {
       alert('Login failed');
     }

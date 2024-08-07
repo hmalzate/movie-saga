@@ -12,6 +12,7 @@ import ContentSection2 from './components/ContentSection2';
 import Hero from './components/Hero';
 import SearchResults from './components/SearchResults';
 import TVShowList from './pages/tvshowlist'; // Added import
+import Dashboard from './pages/Dashboard'; // Added import
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/signup" element={<Registration />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path="/dashboard" element={<Dashboard />} /> {/* Added route */}
         </Routes>
         <div className="content-section">
           <ContentSection1 />
