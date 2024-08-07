@@ -5,7 +5,7 @@ body {
   color: #e705b3;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Add this to ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 /* App Layout */
@@ -38,12 +38,12 @@ body {
 }
 
 .logo-img {
-  height: 60px; /* Adjusted for better responsiveness */
+  height: 60px;
   margin-right: 10px;
 }
 
 .logo-text {
-  font-size: 2rem; /* Adjusted for better responsiveness */
+  font-size: 2rem;
   font-family: "URW Chancery L", cursive;
   font-weight: bold;
   color: rgb(242, 0, 125);
@@ -54,6 +54,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -119,7 +120,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
-  margin-left: 1rem; /* Added margin to separate from the search bar */
+  margin-left: 1rem;
 }
 
 .logout-button:hover {
@@ -131,7 +132,7 @@ body {
 .hero-slide {
   position: relative;
   height: 40vh;
-  margin-top: 80px; /* Adjusted to account for the fixed header */
+  margin-top: 80px;
 }
 
 .hero-img {
@@ -149,7 +150,6 @@ body {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  font-style: bold;
   margin: 0;
   padding: 0;
   color: rgb(242, 241, 247);
@@ -228,7 +228,7 @@ body {
   transition: transform 0.3s;
   flex: 0 0 auto;
   width: 18vw;
-  min-width: 150px; /* Ensure minimum width */
+  min-width: 150px;
 }
 
 .featured-item img {
@@ -489,15 +489,15 @@ body {
   align-items: center;
   height: calc(100vh - 60px);
   background-color: black;
-  padding-top: 2rem; /* Adjust to move the form higher */
+  padding-top: 2rem;
 }
 
 .form {
   background: #979696;
-  padding: 2rem; /* Increase padding for a larger form */
+  padding: 2rem;
   border: 5px solid #05d5f5;
   border-radius: 8px;
-  max-width: 600px; /* Increase width for a larger form */
+  max-width: 600px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -505,7 +505,7 @@ body {
 .form h2 {
   margin-bottom: 1rem;
   color: rgb(255, 0, 234);
-  font-size: 1.5rem; /* Increase font size */
+  font-size: 1.5rem;
 }
 
 .form label {
@@ -513,12 +513,12 @@ body {
   margin-bottom: 0.5rem;
   color: black;
   font-weight: bold;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem;
 }
 
 .form input {
   width: 100%;
-  padding: 0.5rem; /* Increase padding for larger input fields */
+  padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #a804d1;
   border-radius: 4px;
@@ -527,14 +527,14 @@ body {
 
 .form button {
   width: 100%;
-  padding: 0.8rem; /* Increase padding for larger button */
+  padding: 0.8rem;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem;
 }
 
 .form button:hover {
@@ -545,7 +545,7 @@ body {
   margin-top: 1rem;
   text-align: center;
   color: white;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem;
 }
 
 .signup-link a {
@@ -648,7 +648,7 @@ body {
 
   .hero-slide {
     height: 50vh;
-    margin-top: 80px; /* Adjusted to account for the fixed header */
+    margin-top: 80px;
   }
 
   .hero-text h1 {
