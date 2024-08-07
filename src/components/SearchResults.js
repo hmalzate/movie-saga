@@ -14,7 +14,7 @@ const SearchResults = () => {
 
   useEffect(() => {
     if (searchQuery) {
-      fetch(`https://digital-backend-h5j1.onrender.com/movies/search?title=${searchQuery}`)
+      fetch(`https://digital-backend-h5j1.onrender.com/movies/search?title=${encodeURIComponent(searchQuery.toLowerCase())}`)
         .then(response => response.json())
         .then(data => {
           setResults(data.data); // Ensure this matches the structure of your response
