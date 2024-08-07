@@ -24,6 +24,11 @@ body {
   align-items: center;
   border-bottom: 8px solid rgb(217, 0, 255);
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .logo-container {
@@ -125,6 +130,7 @@ body {
 .hero-slide {
   position: relative;
   height: 40vh;
+  margin-top: 60px; /* Adjusted to account for the fixed header */
 }
 
 .hero-img {
@@ -639,6 +645,7 @@ body {
 
   .hero-slide {
     height: 50vh;
+    margin-top: 60px; /* Adjusted to account for the fixed header */
   }
 
   .hero-text h1 {
