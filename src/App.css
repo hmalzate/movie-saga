@@ -120,7 +120,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 1in;
 }
 
 .search-button:hover {
@@ -245,20 +244,19 @@ body {
 
 .featured-grid {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .featured-item {
   background: #29292a;
   padding: 0.5rem;
-  margin-right: 1rem;
+  margin: 0.5rem;
   border-radius: 8px;
   transition: transform 0.3s;
-  flex: 0 0 auto;
-  width: 18vw;
+  flex: 0 0 15%;
+  max-width: 18vw;
   min-width: 150px;
 }
 
@@ -266,7 +264,7 @@ body {
   width: 100%;
   height: auto;
   aspect-ratio: 3 / 4;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -299,7 +297,7 @@ body {
 .movie-list .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -308,7 +306,9 @@ body {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 23%;
+  flex: 0 0 15%;
+  max-width: 18vw;
+  min-width: 150px;
   transition: transform 0.3s;
 }
 
@@ -316,13 +316,15 @@ body {
   width: 100%;
   height: auto;
   aspect-ratio: 3 / 4;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .movie-item h3 {
   margin-top: 0.5rem;
   color: black;
+  font-size: 1.2vh;
+  text-align: center;
 }
 
 .movie-item:hover {
@@ -337,7 +339,7 @@ body {
 .tvshow-list .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -346,7 +348,9 @@ body {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 23%;
+  flex: 0 0 15%;
+  max-width: 18vw;
+  min-width: 150px;
   transition: transform 0.3s;
 }
 
@@ -354,13 +358,15 @@ body {
   width: 100%;
   height: auto;
   aspect-ratio: 3 / 4;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .tvshow-item h3 {
   margin-top: 0.5rem;
   color: black;
+  font-size: 1.2vh;
+  text-align: center;
 }
 
 .tvshow-item:hover {
@@ -381,6 +387,7 @@ body {
 
 .movie-detail-header {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #1c1c1c;
   border-radius: 12px;
@@ -405,6 +412,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .movie-detail-info h2 {
