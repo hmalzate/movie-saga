@@ -84,30 +84,42 @@ body {
   align-items: center;
   margin-left: auto;
   white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
 }
 
 .search-input {
   padding: 0.5rem;
   font-size: 1.5vh; /* Slightly larger */
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px 0 0 4px;
   outline: none;
   flex-grow: 1; /* Make the input grow */
+  background-color: transparent;
+  color: white;
+  border-right: none;
 }
 
 .search-button {
   padding: 0.5rem;
   font-size: 1.5vh; /* Slightly larger */
-  background-color: #ccc;
+  background-color: transparent;
   border: none;
-  border-left: 1px solid #ccc;
-  border-radius: 0 4px 4px 0;
+  color: white;
   cursor: pointer;
-  margin-right: 1in; /* 1 inch margin from right side */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1in; /* 1 inch margin from right side */
 }
 
 .search-button:hover {
-  background-color: #aaa;
+  background-color: transparent;
+}
+
+.search-icon {
+  font-size: 2vh;
+  margin-right: 0.5rem;
 }
 
 .user-name {
