@@ -18,7 +18,7 @@ const SearchResults = () => {
       fetch(`https://digital-backend-h5j1.onrender.com/movies`)
         .then(response => response.json())
         .then(data => {
-          setResults(data.data); // Ensure this matches the structure of your response
+          setResults(data.data);
         })
         .catch(error => {
           console.error('Error fetching the search results:', error);

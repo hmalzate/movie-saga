@@ -11,8 +11,8 @@ import ContentSection1 from './components/ContentSection1';
 import ContentSection2 from './components/ContentSection2';
 import Hero from './components/Hero';
 import SearchResults from './components/SearchResults';
-import TVShowList from './pages/tvshowlist'; // Added import
-import Dashboard from './pages/Dashboard'; // Added import
+import TVShowList from './pages/tvshowlist'; // This is my new Added import 
+import Dashboard from './pages/Dashboard'; // This is my new Added import
 import './App.css';
 
 function App() {

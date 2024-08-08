@@ -1,4 +1,3 @@
-// src/services/movieService.js
 const BASE_URL = 'https://digital-backend-h5j1.onrender.com';
 
 export const fetchAllMovies = async () => {
@@ -7,7 +6,7 @@ export const fetchAllMovies = async () => {
     throw new Error('Network response was not ok');
   }
   const data = await response.json();
-  return data.data; // Adjust based on your response structure
+  return data.data; 
 };
 
 export const fetchAllTVShows = async () => {
@@ -16,7 +15,7 @@ export const fetchAllTVShows = async () => {
     throw new Error('Network response was not ok');
   }
   const data = await response.json();
-  return data.data; // Adjust based on your response structure
+  return data.data; 
 };
 
 export const fetchMovieById = async (id) => {
@@ -25,7 +24,7 @@ export const fetchMovieById = async (id) => {
     throw new Error('Network response was not ok');
   }
   const data = await response.json();
-  return data.data; // Adjust based on your response structure
+  return data.data; 
 };
 
 export const searchMoviesByTitle = async (title) => {
