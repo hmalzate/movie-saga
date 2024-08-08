@@ -142,7 +142,7 @@ body {
 /* Hero Section Styles */
 .hero-slide {
   position: relative;
-  height: 40vh;
+  height: 35vh;
   margin-top: 80px;
   width: 100%;
 }
@@ -197,7 +197,7 @@ body {
 
 /* Featured Section Styles */
 .featured-section {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: black;
   color: white;
 }
@@ -274,7 +274,7 @@ body {
 
 /* Movie List Styles */
 .movie-list {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .movie-list .grid {
@@ -312,7 +312,7 @@ body {
 
 /* TV Show List Styles */
 .tvshow-list {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .tvshow-list .grid {
@@ -352,7 +352,7 @@ body {
 .movie-detail {
   background-color: #0b1a30;
   color: white;
-  padding: 3rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -434,7 +434,7 @@ body {
 
 /* Content Section Styles */
 .content-section {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: black;
   color: white;
   margin: 1rem 0;
@@ -651,7 +651,7 @@ body {
   }
 
   .hero-slide {
-    height: 50vh;
+    height: 40vh;
     margin-top: 80px;
   }
 
