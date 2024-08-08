@@ -94,7 +94,7 @@ body {
 
 .search-input {
   padding: 0.5rem 1rem;
-  font-size: 1.5vh;
+  font-size: 2vh;
   border: 1px solid magenta; /* Updated border color */
   border-radius: 4px 0 0 4px;
   outline: none;
@@ -105,7 +105,7 @@ body {
 
 .search-button {
   padding: 0.5rem 1rem;
-  font-size: 1.5vh;
+  font-size: 2vh;
   background-color: magenta;
   border: none;
   color: white;
@@ -395,7 +395,7 @@ body {
 }
 
 .movie-detail-info p {
-  font-size: 1.2vh;
+  font-size: 1.5vh;
   color: #d3d3d3;
   margin-bottom: 1rem;
 }
@@ -410,8 +410,8 @@ body {
   background-color: #e705b3;
   color: black;
   border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1vh;
+  padding: 1rem 2rem;
+  font-size: 1.2vh;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s;
@@ -441,7 +441,7 @@ body {
 }
 
 .content-section h2 {
-  font-size: 1.5vh;
+  font-size: 2vh;
   color: magenta;
   margin-bottom: 1rem;
   text-align: left;
@@ -469,13 +469,13 @@ body {
 }
 
 .content-info h3 {
-  font-size: 1.2vh;
+  font-size: 1.5vh;
   color: magenta;
   margin-bottom: 1rem;
 }
 
 .content-info p {
-  font-size: 1vh;
+  font-size: 1.2vh;
   color: white;
   margin-bottom: 1rem;
 }
@@ -506,18 +506,19 @@ body {
 
 .form {
   background: #979696;
-  padding: 2rem;
+  padding: 3rem;
   border: 5px solid #05d5f5;
   border-radius: 8px;
   max-width: 600px;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 1in; /* Positioning form 1 inch from the hero banner */
 }
 
 .form h2 {
   margin-bottom: 1rem;
   color: rgb(255, 0, 234);
-  font-size: 1.5vh;
+  font-size: 2.5vh;
 }
 
 .form label {
@@ -525,28 +526,29 @@ body {
   margin-bottom: 0.5rem;
   color: black;
   font-weight: bold;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 
 .form input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #a804d1;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 2vh;
 }
 
 .form button {
   width: 100%;
-  padding: 0.8rem;
+  padding: 1rem;
   background: #333;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 
 .form button:hover {
@@ -557,7 +559,7 @@ body {
   margin-top: 1rem;
   text-align: center;
   color: white;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 
 .signup-link a {
@@ -654,12 +656,12 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 1.8vh;
+    font-size: 2.5vh;
     -webkit-text-stroke: 0.2vh rgb(4, 5, 4);
   }
 
   .hero-text p {
-    font-size: 1vh;
+    font-size: 2vh;
     -webkit-text-stroke: 0.1vh rgb(14, 13, 13);
   }
 
@@ -676,29 +678,29 @@ body {
   }
 
   .form {
-    padding: 1.5rem;
+    padding: 2rem;
     border-width: 3px;
   }
 
   .form h2 {
-    font-size: 1.5vh;
+    font-size: 2.5vh;
   }
 
   .form label {
-    font-size: 1vh;
+    font-size: 2vh;
   }
 
   .form input {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .form button {
-    padding: 0.8rem;
-    font-size: 1vh;
+    padding: 1rem;
+    font-size: 2vh;
   }
 
   .signup-link {
-    font-size: 1vh;
+    font-size: 2vh;
   }
 
   .footer {
@@ -711,7 +713,7 @@ body {
   }
 
   .footer h4 {
-    font-size: 1.5vh;
+    font-size: 2.5vh;
   }
 }
 
@@ -772,11 +774,11 @@ body {
   }
 
   .movie-detail-info h2 {
-    font-size: 1.5vh;
+    font-size: 2.5vh;
   }
 
   .movie-detail-info p {
-    font-size: 1vh;
+    font-size: 2vh;
   }
 
   .movie-detail-actions {
@@ -787,8 +789,8 @@ body {
   .rent-button,
   .buy-button {
     width: 100%;
-    padding: 0.8rem;
-    font-size: 1vh;
+    padding: 1rem;
+    font-size: 2vh;
   }
 }
 
@@ -801,11 +803,11 @@ body {
 }
 
 .dashboard h2 {
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: magenta;
 }
 
 .dashboard p {
-  font-size: 1.5vh;
+  font-size: 2vh;
   color: silver;
 }
